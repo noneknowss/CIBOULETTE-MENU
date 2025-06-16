@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciboulette - Comida Congelada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f9f7;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://t4.ftcdn.net/jpg/04/43/37/07/360_F_443370711_sqHRnSIQovW6uyQ5ZwDpd4kjCG8Q6swm.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .food-image {
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        
+        .food-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ddd, transparent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="hero text-white py-20 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-light mb-4 tracking-wider">CIBOULETTE</h1>
+            <p class="text-xl md:text-2xl font-light">Comida congelada artesanal para tus comidas y cenas</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Intro -->
+        <section class="mb-16 text-center max-w-3xl mx-auto">
+            <h2 class="text-3xl font-light mb-6">Delicias Congeladas Listas para Disfrutar</h2>
+            <p class="text-gray-600 mb-8">Nuestros productos están preparados con ingredientes frescos y mucho cuidado, listos para que solo tengas que calentar y disfrutar en casa.</p>
+            <div class="divider my-8"></div>
+        </section>
+
+        <!-- Pasteles Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-light mb-8 text-center">PASTELES EN HOJA</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pastel de Carne -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/pasteles%20en%20hoja/Pasteles%20en%20hoja%20de%20Vianda%20(Rellenos%20de%20carne%20de%20res).png" alt="Pastel de carne" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Pasteles en hoja de viveres o yuca</h3>
+                        <p class="text-gray-600 mb-4">Rellenos de carne de res</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 6 unidades</span>
+                            <span class="text-lg font-bold">$600</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 3 unidades</span>
+                            <span class="text-lg font-bold">$300</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastel de Pollo -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/pasteles%20en%20hoja/Pasteles%20en%20hoja%20de%20Vianda%20(Rellenos%20de%20pollo%20en%20tiritas).png" alt="Pastel de pollo" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Pasteles en hoja de viveres o yuca</h3>
+                        <p class="text-gray-600 mb-4">Rellenos de pollo</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 6 unidades</span>
+                            <span class="text-lg font-bold">$600</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 3 unidades</span>
+                            <span class="text-lg font-bold">$300</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastel de Bacalao -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/pasteles%20en%20hoja/Pasteles%20en%20hoja%20de%20Vianda%20(Rellenos%20de%20bacalao%20y%20garbanzos).png" alt="Pastel de bacalao" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Pasteles en hoja de viveres o yuca</h3>
+                        <p class="text-gray-600 mb-4">Rellenos de bacalao y garbanzos</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 6 unidades</span>
+                            <span class="text-lg font-bold">$600</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de 3 unidades</span>
+                            <span class="text-lg font-bold">$300</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Niños Envueltos Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-light mb-8 text-center">NIÑOS ENVUELTOS</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+                <!-- Paquete 4 und -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147718531/images/53e8c-cb15-5128-7356-137640a8c3e_00ab3b5d-aa76-499e-9686-9fdd47cf16fc.jpg" alt="Niños envueltos" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-4">Niños Envueltos</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de <b>4 unidades</b></span>
+                            <span class="text-lg font-bold">$350</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Paquete 8 und -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147718531/images/53e8c-cb15-5128-7356-137640a8c3e_00ab3b5d-aa76-499e-9686-9fdd47cf16fc.jpg" alt="Niños envueltos" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-4">Niños Envueltos</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-medium">Paquete de <b>8 unidades</b></span>
+                            <span class="text-lg font-bold">$700</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caldos Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-light mb-8 text-center">CALDOS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Caldo Campesino -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/image.png" alt="Caldo campesino" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Caldo Campesino</h3>
+                        <p class="text-gray-600 mb-4">Con pecho, pollo y vegetales</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Envase 16 oz</span>
+                                <span class="font-bold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Envase 32 oz</span>
+                                <span class="font-bold">$550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caldo Gallego -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/gallego.png" alt="Caldo gallego" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Caldo Gallego</h3>
+                        <p class="text-gray-600 mb-4">Chuleta ahumada, cerdo, pecho de res y chorizo</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Envase 16 oz</span>
+                                <span class="font-bold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Envase 32 oz</span>
+                                <span class="font-bold">$550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caldo de Lentejas y Carnes -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/Caldo%20de%20Lentejas%20y%20Carnes.png" alt="Caldo de lentejas" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Caldo de Lentejas y Carnes</h3>
+                        <p class="text-gray-600 mb-4">Chuleta ahumada, cerdo, pollo y vegetales</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Envase 16 oz</span>
+                                <span class="font-bold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Envase 32 oz</span>
+                                <span class="font-bold">$550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caldo de Lentejas y Bacalao -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/Caldo%20de%20Lentejas%20y%20Bacalao.png" alt="Caldo de lentejas y bacalao" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Caldo de Lentejas y Bacalao</h3>
+                        <p class="text-gray-600 mb-4">Con bacalao y vegetales</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Envase 16 oz</span>
+                                <span class="font-bold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Envase 32 oz</span>
+                                <span class="font-bold">$550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Caldo de Garbanzos -->
+                <div class="menu-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="file:///Users/diegomercedes/Downloads/Plantopolis/extra/para%20abuela/Caldo%20de%20Garbanzos.png" alt="Caldo de garbanzos" class="food-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-medium mb-2">Caldo de Garbanzos</h3>
+                        <p class="text-gray-600 mb-4">Con pollo, chorizo y vegetales</p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Envase 16 oz</span>
+                                <span class="font-bold">$350</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Envase 32 oz</span>
+                                <span class="font-bold">$550</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Info -->
+        <section class="bg-white rounded-lg shadow-md p-8 max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl font-light mb-6">Cómo realizar tu pedido</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <i class="fas fa-phone-alt text-2xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-2">Llama o envía mensaje</h3>
+                    <p class="text-gray-600">Para realizar tu pedido</p>
+                    <a href="tel:8097295582" class="mt-4 text-lg font-bold hover:text-gray-700 transition">809-729-5582</a>
+                </div>
+                
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-100 rounded-full p-4 mb-4">
+                        <i class="fas fa-motorcycle text-2xl text-gray-700"></i>
+                    </div>
+                    <h3 class="text-xl font-medium mb-2">Entrega disponible</h3>
+                    <p class="text-gray-600">Por Uber Moto con costo adicional</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-100 p-4 rounded-lg">
+                <p class="font-medium"><i class="fas fa-info-circle mr-2"></i> No compartimos nuestra ubicación física</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-light mb-6">CIBOULETTE</h2>
+            <p class="text-gray-400 mb-8">Comida congelada artesanal para simplificar tu vida</p>
+            
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.instagram.com/cibouletterd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="https://www.facebook.com/people/Ciboulette/100063557710978/" class="text-gray-400 hover:text-white transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+                <a href="tel:8097295582" class="text-gray-400 hover:text-white transition">
+                    <i class="fas fa-phone-alt text-2xl"></i>
+                </a>
+            </div>
+            
+            <p class="text-gray-500 text-sm">© 2005 Ciboulette. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for menu items when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.style.opacity = 0;
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
+<!-- End of index.html -->
